@@ -27,7 +27,7 @@ describe("substitution() submission tests written by Thinkful", () => {
   describe("encoding a message", () => {
     it("should encode a message by using the given substitution alphabet", () => {
       const message = "message";
-      const alphabet = "plmoknijbuhvygctfxrdzeswa!";
+      const alphabet = "plmoknijbuhvygctfxrdzeswaq";
       const actual = substitution(message, alphabet);
       const expected = "ykrrpik";
 
@@ -56,7 +56,7 @@ describe("substitution() submission tests written by Thinkful", () => {
   describe("decoding a message", () => {
     it("should decode a message by using the given substitution alphabet", () => {
       const message = "ykrrpik";
-      const alphabet = "plmoknijbuhvygctfxrdzeswa!";
+      const alphabet = "plmoknijbuhvygctfxrdzeswaq";
       const actual = substitution(message, alphabet, false);
       const expected = "message";
 
