@@ -13,7 +13,7 @@ const caesarModule = (function () {
   const alphabetExt = [...alphabet, ...alphabet, ...alphabet];
 
   function caesar(input, shift, encode = true) {
-    if (shift === 0 || shift > 25 || shift < -25) {return false}
+    if (shift === 0 || shift > 25 || shift < -25) {return false};
     /*Create a map of the indexes of the corrisponding locations of letters 
     in the alphabetExt array and shifts the letters the appropriate amount*/
       let indexMap = [[]];
@@ -53,14 +53,14 @@ const caesarModule = (function () {
           } else {
             map[location] = alphabetExt[alphabetIndex];
           }
-        });
-      });
+        })
+      })
 
       let encodedMessage = [];
       /*Adds the joined letters to an array and then again joined to 
       preserve spacing*/
       indexMap.forEach((word, index) => {
-        encodedMessage.push(indexMap[index].join(""))
+        encodedMessage.push(indexMap[index].join(""));
       })
 
        return encodedMessage.join(' ');  
