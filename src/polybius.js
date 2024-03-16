@@ -65,6 +65,4 @@ const polybiusModule = (function () {
   };
 })();
 
-//polybiusModule.polybius('2345 33112351 4234 22112424514444', false)
-
 module.exports = { polybius: polybiusModule.polybius };
